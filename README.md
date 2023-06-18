@@ -4,28 +4,20 @@
 
 
 ## Overview
-Kato is a tool to help developers test the correctness of their Kubernetes operators.
+Kato is a fully automatic end-to-end testing tool for Kubernetes operators. 
 
-Many cloud systems today have operators to manage them atop the Kubernetes platform.
-These operators automate important management
-tasks, e.g., software upgrades, configuration updates, and autoscaling.
-Even for the same cloud system, different operators
-are implemented by commercial vendors and open-source
-communities to support different practices and environments.
+Kato implements a state-centric approach to test the target operator together with the managed system. 
+It continuously instructs the operator to reconcile the system to different states and checks if the system reaches those desired states. 
+Kato models operations as state transitions and systematically realizes state-transition sequences to exercise supported operations in different scenarios. 
+Kato’s automated oracles check if a system’s state is as desired. 
 
-Kato tests operation correctness by performing end-to-end (e2e) testing of cloud-native operators together with the managed systems. 
-To do so, Kato continuously generates new operations and
-check if the operator can correctly reconciles the system from each current state to the desired state.
+Kato is fully automatic. 
+It only needs the operator’s deployment script as the input. 
+The testing is done in the local Kubernetes environment supported by different backends: Kind, Minikube, and K3d. 
+The detailed steps of using Kato to test an operator is listed [here](docs/port.md).
 
-The minimum requirement to use Kato is to provide a way to deploy the operator to be tested.
-To run Kato in whitebox mode, it additionally requires the operators' source code information.
-We list detailed porting steps [here](docs/port.md).
-
-Kato generates syntactically valid desired state declarations(CR) by parsing the CRD of each operator, 
-  which contains constraints like type, min/max values(for numeric types), length (for string type), regular-expression patterns, etc.
-Kato generates values which satisfy predicates, in the form of property dependencies. 
-In blackbox mode, Kato infers the dependencies through naming conventions. 
-In whitebox mode, Kato infers the dependencies using control-flow analysis on the source code.
+Kato has been applied to 11 popular Kuberentes and has found 50+ serious bugs (many are confirmed and fixed). 
+See [the lists of bugs](bugs.md) found by Kato.
 
 ## Prerequisites
 - [Golang](https://go.dev/doc/install)
@@ -41,8 +33,8 @@ In whitebox mode, Kato infers the dependencies using control-flow analysis on th
 ## Getting started
 
 Users need to port the operator before testing it with Kato.
-We list the detailed porting steps [here](https://github.com/xlab-uiuc/kato/blob/main/docs/port.md).
-We are actively working on simplifying the porting process.
+We list the detailed steps of using Kato [here](docs/port.md).
+We are actively working on simplifying the process to make it more user-friendly.
 
 ## Demo
 To show Kato's bug finding capability, we reproduce one of the previous bugs Kato found automatically.
