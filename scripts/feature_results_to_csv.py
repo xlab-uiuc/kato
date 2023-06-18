@@ -33,14 +33,14 @@ if __name__ == '__main__':
                                         index_col=0,
                                         usecols=['Trial number', 'testcase_x', 'True/False'])
 
-    baseline_results = glob.glob(os.path.join(result_folder, '*', 'post-result-*-baseline.json'))
+    baseline_results = glob.glob(os.path.join(result_folder, 'trial-??-????', 'post-result-*-baseline.json'))
     canonicalization_results = glob.glob(
-        os.path.join(result_folder, '*', 'post-result-*-canonicalization.json'))
+        os.path.join(result_folder, 'trial-??-????', 'post-result-*-canonicalization.json'))
     dependency_results = glob.glob(
-        os.path.join(result_folder, '*', 'post-result-*-dependency_analysis.json'))
+        os.path.join(result_folder, 'trial-??-????', 'post-result-*-dependency_analysis.json'))
     taint_analysis_results = glob.glob(
-        os.path.join(result_folder, '*', 'post-result-*-taint_analysis.json'))
-    recovery_results = glob.glob(os.path.join(result_folder, '*', 'result.json'))
+        os.path.join(result_folder, 'trial-??-????', 'post-result-*-taint_analysis.json'))
+    recovery_results = glob.glob(os.path.join(result_folder, 'trial-??-????', 'result.json'))
 
     with open(test_plan_path, 'r') as f:
         test_plan = json.load(f)
@@ -272,7 +272,8 @@ if __name__ == '__main__':
                     'input': json_instance['post_result']['error']['testcase'],
                     'symptom': json_instance['post_result']['error']
                 }
-                classify_alarm(alarm_features)
+                # TODO: implement classify_alarm
+                # classify_alarm(alarm_features)
                 taint_analysis_df_list.append({
                     'Trial number': json_instance['post_result']['trial_num'],
                     'testcase': json_instance['post_result']['error']['testcase'],

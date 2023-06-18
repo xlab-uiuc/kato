@@ -200,6 +200,8 @@ class PostDiffTest(PostProcessor):
         print(series.head())
 
     def post_process(self, workdir: str, num_workers: int = 1):
+        if not os.path.exists(workdir):
+            os.mkdir(workdir)
         cluster = kind.Kind()
         cluster.configure_cluster(self.config.num_nodes, CONST.K8S_VERSION)
         deploy = Deploy(DeployMethod.YAML, self.config.deploy.file, self.config.deploy.init).new()
@@ -259,7 +261,7 @@ class PostDiffTest(PostProcessor):
         cluster = kind.Kind()
         cluster.configure_cluster(self.config.num_nodes, CONST.K8S_VERSION)
 
-        deploy = Deploy(DeployMethod.YAML, config.deploy.file, config.deploy.init).new()
+        deploy = Deploy(DeployMethod.YAML, self.config.deploy.file, self.config.deploy.init).new()
 
         runner = AdditionalRunner(context=self.context,
                                   deploy=deploy,

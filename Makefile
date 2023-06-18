@@ -3,5 +3,5 @@ lib:
 	(cd ssa && make)
 
 clean:
-	(cd k8s_util/lib && make clean)
+	(cd kato/k8s_util/lib && make clean)
 	(cd ssa && make)
