@@ -1,11 +1,11 @@
-from acto.input.known_schemas import (ImageSchema, K8sField, PodTemplateSchema,
+from kato.input.known_schemas import (ImageSchema, K8sField, PodTemplateSchema,
                                       ResourceRequirementsSchema,
                                       ServiceAccountNameSchema,
                                       TolerationsSchema)
-from acto.input.known_schemas.pod_schemas import NodeSelectorSchema
-from acto.input.known_schemas.resource_schemas import (
+from kato.input.known_schemas.pod_schemas import NodeSelectorSchema
+from kato.input.known_schemas.resource_schemas import (
     ComputeResourceRequirementsSchema, StorageResourceRequirementsSchema)
-from acto.input.known_schemas.storage_schemas import \
+from kato.input.known_schemas.storage_schemas import \
     PersistentVolumeClaimSpecSchema
 
 WHITEBOX = [

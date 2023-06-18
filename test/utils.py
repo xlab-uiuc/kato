@@ -2,7 +2,7 @@ import json
 
 import yaml
 
-from acto.snapshot import Snapshot
+from kato.snapshot import Snapshot
 
 
 def construct_snapshot(trial_dir: str, generation: int):

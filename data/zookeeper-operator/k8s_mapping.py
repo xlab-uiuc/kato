@@ -1,4 +1,4 @@
-from acto.input.known_schemas import *
+from kato.input.known_schemas import *
 
 WHITEBOX = [
     K8sField(['spec', 'image', 'pullPolicy'], ImagePullPolicySchema),

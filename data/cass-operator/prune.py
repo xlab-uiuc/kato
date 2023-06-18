@@ -1,4 +1,4 @@
-from acto.input.input import CopiedOverField, OverSpecifiedField
+from kato.input.input import CopiedOverField, OverSpecifiedField
 
 custom_fields = [
     CopiedOverField(['spec', 'configBuilderResources', 'limits']),

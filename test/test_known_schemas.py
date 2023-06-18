@@ -4,9 +4,9 @@ import unittest
 
 import yaml
 
-from acto.input.get_matched_schemas import field_matched, find_matched_schema
-from acto.input.known_schemas import *
-from acto.schema import extract_schema
+from kato.input.get_matched_schemas import field_matched, find_matched_schema
+from kato.input.known_schemas import *
+from kato.schema import extract_schema
 
 test_dir = pathlib.Path(__file__).parent.resolve()
 

@@ -5,12 +5,12 @@ import unittest
 
 import yaml
 
-from acto.checker import Checker
-from acto.common import FeatureGate
-from acto.input import DeterministicInputModel, InputModel
-from acto.post_process.post_diff_test import PostDiffTest
-from acto.post_process.post_process import construct_step
-from acto.utils import OperatorConfig
+from kato.checker import Checker
+from kato.common import FeatureGate
+from kato.input import DeterministicInputModel, InputModel
+from kato.post_process.post_diff_test import PostDiffTest
+from kato.post_process.post_process import construct_step
+from kato.utils import OperatorConfig
 
 from .utils import construct_snapshot
 
