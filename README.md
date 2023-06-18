@@ -1,4 +1,4 @@
-# Kato: Automatic Correctness Testing for (Kubernetes) Operators
+# Kato: Automatic Correctness Testing for Kubernetes Operators
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![Regression Test](https://github.com/xlab-uiuc/kato/actions/workflows/unittest.yaml/badge.svg)](https://github.com/xlab-uiuc/kato/actions/workflows/unittest.yaml)
 
