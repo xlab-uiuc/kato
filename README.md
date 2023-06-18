@@ -1,22 +1,24 @@
-# Kato: Automatic Correctness Testing for Kubernetes Operators
+# Kato: Push-Button End-to-End Testing of Kubernetes Operators
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![Regression Test](https://github.com/xlab-uiuc/kato/actions/workflows/unittest.yaml/badge.svg)](https://github.com/xlab-uiuc/kato/actions/workflows/unittest.yaml)
 
 
 ## Overview
+
 Kato is a fully automatic end-to-end testing tool for Kubernetes operators. 
 
 Kato implements a state-centric approach to test the target operator together with the managed system. 
 It continuously instructs the operator to reconcile the system to different states and checks if the system reaches those desired states. 
 Kato models operations as state transitions and systematically realizes state-transition sequences to exercise supported operations in different scenarios. 
-Kato’s automated oracles check if a system’s state is as desired. 
+Kato's automated oracles check if a system’s state is as desired. 
 
 Kato is fully automatic. 
 It only needs the operator’s deployment script as the input. 
-The testing is done in the local Kubernetes environment supported by different backends: Kind, Minikube, and K3d. 
-The detailed steps of using Kato to test an operator is listed [here](docs/port.md).
+Testing is done in a local Kubernetes environment supported by different backends: Kind, Minikube, and K3d. 
+Details on Kato usage are [here](docs/port.md).
 
-Kato has been applied to 11 popular Kuberentes and has found 50+ serious bugs (many are confirmed and fixed). 
+Kato has been applied to 11 popular Kuberentes, where it found 50+ new bugs 
+(many are confirmed and 28 are fixed).
 See [the lists of bugs](bugs.md) found by Kato.
 
 ## Prerequisites
