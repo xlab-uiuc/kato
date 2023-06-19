@@ -64,3 +64,10 @@ For the next step, Kato deletes the key-value pair.
 Due to a bug in cass-operator, the deleted key-value pair
   is not removed from the SeedService resource in Kubernetes.
 Kato automatically detects this bug based on the inconsistency between the CR and the system resources.
+
+## Contributing
+Thank you for your interest in Kato!
+We welcome all feedback and contributions.
+If you wish to file a bug, enhancement proposal or have other questions,
+  please use the Github [Issue](https://github.com/xlab-uiuc/kato/issues/new).
+If you'd like to contribute code, please open a Pull Request.
