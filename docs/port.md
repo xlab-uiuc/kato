@@ -92,3 +92,12 @@ It generates the `result.xlsx` file under the `testrun-cass` which contains
   all the oracle results.
 You can easily inspect the alarms by importing it into Google Sheet or Excel
   and filter by `alarm==True`.
+The alarm sheet would contain the following columns:
+- `Trial number`: directory name containing the test result
+- `testcase`: describing which testcase and which field are exercised
+- `{}_alarm`: whether Kato reports alarm for this testcase
+- `crash_result`: Alarm information if some containers crashed during the test
+- `health_result`: Whether the application has the desired number of healthy replicas
+- `recovery_result`: Whether the operator is able to recover the application from errorneous state
+- `state_result`: Alarm information if Kato finds inconsistency between the desired state and the system state
+- `custom_result`: Alarm information of users' customized oracle
