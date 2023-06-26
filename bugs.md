@@ -1,7 +1,7 @@
 # Number of bugs
 (Byproduct bugs included) Total bugs: **76**, confirmed: **56**, Fixed: **38**.<br/>
 
-(Byproduct bugs excluded) Total bugs: **56**, confirmed: **40**, Fixed: **28**.<br/>
+(Byproduct bugs excluded) Total bugs: **69**, confirmed: **52**, Fixed: **34**.<br/>
 
 # Bugs found
 
@@ -11,6 +11,7 @@
 | k8ssandra/cass-operator             | [https://github.com/k8ssandra/cass-operator/issues/330](https://github.com/k8ssandra/cass-operator/issues/330)                       | fixed     |
 | k8ssandra/cass-operator             | [https://github.com/k8ssandra/cass-operator/issues/334](https://github.com/k8ssandra/cass-operator/issues/334)                       | confirmed |
 | k8ssandra/cass-operator             | [https://github.com/k8ssandra/cass-operator/issues/471](https://github.com/k8ssandra/cass-operator/issues/471)                       |           |
+| k8ssandra/cass-operator             | [https://github.com/k8ssandra/k8ssandra/issues/1380](https://github.com/k8ssandra/k8ssandra/issues/1380)                             | fixed     |
 | cockroachdb/cockroach-operator      | [https://github.com/cockroachdb/cockroach-operator/issues/918](https://github.com/cockroachdb/cockroach-operator/issues/918)         | confirmed |
 | cockroachdb/cockroach-operator      | [https://github.com/cockroachdb/cockroach-operator/issues/920](https://github.com/cockroachdb/cockroach-operator/issues/920)         | confirmed |
 | cockroachdb/cockroach-operator      | [https://github.com/cockroachdb/cockroach-operator/issues/927](https://github.com/cockroachdb/cockroach-operator/issues/927)         | confirmed |
@@ -27,7 +28,9 @@
 | mongodb/mongodb-kubernetes-operator | [mongodb/mongodb-kubernetes-operator#1251](https://github.com/mongodb/mongodb-kubernetes-operator/issues/1251)                       |           |
 | mongodb/mongodb-kubernetes-operator | [mongodb/mongodb-kubernetes-operator#1252](https://github.com/mongodb/mongodb-kubernetes-operator/issues/1252)                       |           |
 | mongodb/mongodb-kubernetes-operator | [https://github.com/mongodb/mongodb-kubernetes-operator/pull/1024](https://github.com/mongodb/mongodb-kubernetes-operator/pull/1024) | fixed     |
+| mongodb/mongodb-kubernetes-operator | [https://github.com/mongodb/helm-charts/pull/123](https://github.com/mongodb/helm-charts/pull/123)                                   | fixed     |
 | percona-server-mongodb-operator     | [https://jira.percona.com/browse/K8SPSMDB-696](https://jira.percona.com/browse/K8SPSMDB-696)                                         | fixed     |
+| percona-server-mongodb-operator     | [https://jira.percona.com/browse/K8SPSMDB-697](https://jira.percona.com/browse/K8SPSMDB-697)                                         | fixed     |
 | percona-server-mongodb-operator     | [https://jira.percona.com/browse/K8SPSMDB-738](https://jira.percona.com/browse/K8SPSMDB-738)                                         | fixed     |
 | percona-server-mongodb-operator     | [https://jira.percona.com/browse/K8SPSMDB-742](https://jira.percona.com/browse/K8SPSMDB-742)                                         | fixed     |
 | percona-server-mongodb-operator     | [https://jira.percona.com/browse/K8SPSMDB-895](https://jira.percona.com/browse/K8SPSMDB-895)                                         | fixed     |
@@ -53,42 +56,28 @@
 | OT-CONTAINER-KIT/redis-operator     | [https://github.com/OT-CONTAINER-KIT/redis-operator/issues/297](https://github.com/OT-CONTAINER-KIT/redis-operator/issues/297)       | fixed     |
 | OT-CONTAINER-KIT/redis-operator     | [https://github.com/OT-CONTAINER-KIT/redis-operator/issues/474](https://github.com/OT-CONTAINER-KIT/redis-operator/issues/474)       | fixed     |
 | OT-CONTAINER-KIT/redis-operator     | [https://github.com/OT-CONTAINER-KIT/redis-operator/issues/480](https://github.com/OT-CONTAINER-KIT/redis-operator/issues/480)       |           |
+| OT-CONTAINER-KIT/redis-operator     | [https://github.com/OT-CONTAINER-KIT/redis-operator/issues/279](https://github.com/OT-CONTAINER-KIT/redis-operator/issues/279)       | fixed     |
 | pingcap/tidb-operator               | [https://github.com/pingcap/tidb-operator/issues/4613](https://github.com/pingcap/tidb-operator/issues/4613)                         | fixed     |
 | pingcap/tidb-operator               | [https://github.com/pingcap/tidb-operator/issues/4684](https://github.com/pingcap/tidb-operator/issues/4684)                         |           |
 | pingcap/tidb-operator               | [https://github.com/pingcap/tidb-operator/issues/4945](https://github.com/pingcap/tidb-operator/issues/4945)                         | confirmed |
 | pingcap/tidb-operator               | [https://github.com/pingcap/tidb-operator/issues/4946](https://github.com/pingcap/tidb-operator/issues/4946)                         | confirmed |
+| pingcap/tidb-operator               | [https://github.com/pingcap/tidb-operator/issues/4649](https://github.com/pingcap/tidb-operator/issues/4649)                         | confirmed |
+| pingcap/tidb-operator               | [https://github.com/pingcap/tidb-operator/issues/4705](https://github.com/pingcap/tidb-operator/issues/4705)                         |           |
+| pingcap/tidb-operator               | [https://github.com/pingcap/tidb-operator/issues/4614](https://github.com/pingcap/tidb-operator/issues/4614)                         | fixed     |
 | pravega/zookeeper-operator          | [https://github.com/pravega/zookeeper-operator/issues/474](https://github.com/pravega/zookeeper-operator/issues/474)                 | fixed     |
 | pravega/zookeeper-operator          | [https://github.com/pravega/zookeeper-operator/issues/454](https://github.com/pravega/zookeeper-operator/issues/454)                 | confirmed |
 | pravega/zookeeper-operator          | [https://github.com/pravega/zookeeper-operator/issues/513](https://github.com/pravega/zookeeper-operator/issues/513)                 |           |
 | pravega/zookeeper-operator          | [https://github.com/pravega/zookeeper-operator/issues/540](https://github.com/pravega/zookeeper-operator/issues/540)                 |           |
 | pravega/zookeeper-operator          | [https://github.com/pravega/zookeeper-operator/issues/541](https://github.com/pravega/zookeeper-operator/issues/541)                 |           |
 | pravega/zookeeper-operator          | [https://github.com/pravega/zookeeper-operator/issues/547](https://github.com/pravega/zookeeper-operator/issues/547)                 |           |
+| kubernetes-sigs/controller-tools    | [https://github.com/kubernetes-sigs/controller-tools/issues/665](https://github.com/kubernetes-sigs/controller-tools/issues/665)     | confirmed |
+| kubernetes/kubernetes               | [https://github.com/kubernetes/kubernetes/issues/109839](https://github.com/kubernetes/kubernetes/issues/109839)                     | confirmed |
+| kubernetes/kubernetes               | [https://github.com/kubernetes/kubernetes/issues/110653](https://github.com/kubernetes/kubernetes/issues/110653)                     | confirmed |
+| kubernetes/kubernetes               | [https://github.com/kubernetes/kubernetes/issues/110654](https://github.com/kubernetes/kubernetes/issues/110654)                     | confirmed |
+| kubernetes/kubernetes               | [https://github.com/kubernetes/kubernetes/issues/112609](https://github.com/kubernetes/kubernetes/issues/112609)                     | confirmed |
+| runtime/cgo                         | [https://github.com/golang/go/issues/53958](https://github.com/golang/go/issues/53958)                                               | fixed     |
 
-
-# Byproduct bugs
-
-| Operator                            | Link                                                                                                                           | Status    |
-| ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ | --------- |
-| k8ssandra/cass-operator             | [https://github.com/k8ssandra/k8ssandra/issues/1380](https://github.com/k8ssandra/k8ssandra/issues/1380)                       | fixed     |
-| mongodb/mongodb-kubernetes-operator | [https://github.com/mongodb/helm-charts/pull/123](https://github.com/mongodb/helm-charts/pull/123)                             | fixed     |
-| percona-server-mongodb-operator     | [https://jira.percona.com/browse/K8SPSMDB-697](https://jira.percona.com/browse/K8SPSMDB-697)                                   | fixed     |
-| OT-CONTAINER-KIT/redis-operator     | [https://github.com/OT-CONTAINER-KIT/redis-operator/issues/279](https://github.com/OT-CONTAINER-KIT/redis-operator/issues/279) | fixed     |
-| pingcap/tidb-operator               | [https://github.com/pingcap/tidb-operator/issues/4649](https://github.com/pingcap/tidb-operator/issues/4649)                   | confirmed |
-| pingcap/tidb-operator               | [https://github.com/pingcap/tidb-operator/issues/4705](https://github.com/pingcap/tidb-operator/issues/4705)                   |           |
-| pingcap/tidb-operator               | [https://github.com/pingcap/tidb-operator/issues/4614](https://github.com/pingcap/tidb-operator/issues/4614)                   | fixed     |
-
-# Kubernetes and Go bugs
-
-| Operator                         | Link                                                                                                                             | Status    |
-| -------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- | --------- |
-| kubernetes-sigs/controller-tools | [https://github.com/kubernetes-sigs/controller-tools/issues/665](https://github.com/kubernetes-sigs/controller-tools/issues/665) | confirmed |
-| kubernetes/kubernetes            | [https://github.com/kubernetes/kubernetes/issues/109839](https://github.com/kubernetes/kubernetes/issues/109839)                 | confirmed |
-| kubernetes/kubernetes            | [https://github.com/kubernetes/kubernetes/issues/110653](https://github.com/kubernetes/kubernetes/issues/110653)                 | confirmed |
-| kubernetes/kubernetes            | [https://github.com/kubernetes/kubernetes/issues/110654](https://github.com/kubernetes/kubernetes/issues/110654)                 | confirmed |
-| kubernetes/kubernetes            | [https://github.com/kubernetes/kubernetes/issues/112609](https://github.com/kubernetes/kubernetes/issues/112609)                 | confirmed |
-| runtime/cgo                      | [https://github.com/golang/go/issues/53958](https://github.com/golang/go/issues/53958)                                           | fixed     |
-
-# Unrelated
+# By-product bugs we found along the way
 | Operator                | Link                                                                                                                           | Status |
 | ----------------------- | ------------------------------------------------------------------------------------------------------------------------------ | ------ |
 | k8ssandra/cass-operator | [https://github.com/k8ssandra/cass-operator/issues/324](https://github.com/k8ssandra/cass-operator/issues/324)                 |        |

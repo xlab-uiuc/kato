@@ -20,7 +20,7 @@ class BugCounter():
     def update_number(self) -> list:
         data = self.read_file('./bugs.md')
         for line in data:
-            if '# Byproduct bugs' in line:
+            if '# By-product' in line:
                 self.by_flag = True
             if not self.by_flag:
                 self.num_bugs += line.count('](')
