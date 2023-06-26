@@ -6,7 +6,7 @@ spec:
   additionalServiceConfig:
     seedService:
       additionalLabels:
-        ACTOKEY: ACTOKEY
+        kato-key: kato-value
   clusterName: cluster1
   config:
     cassandra-yaml:

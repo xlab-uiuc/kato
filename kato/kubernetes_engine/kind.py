@@ -126,7 +126,7 @@ class Kind(base.KubernetesEngine):
         else:
             raise Exception('Missing kubeconfig for kind create')
 
-        while subprocess.run(cmd).returncode != 0:
+        while subprocess.run(cmd, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL).returncode != 0:
             continue
 
     def get_node_list(self, name: str):
