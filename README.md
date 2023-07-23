@@ -1,3 +1,11 @@
+# The project is hosted at https://github.com/xlab-uiuc/acto.
+
+## This repo is no longer (and was never) maintained.
+
+## The repo was created for a KubeCon proposal. At the time, we could not release the real project (i.e., [`acto`](https://github.com/xlab-uiuc/acto)) to avoid anonymity violations of a concurrent research paper submission to [SOSP '24](https://sosp2023.mpi-sws.org/cfp.html). Now, the SOSP paper has been accepted, so this repo is retired. 
+
+## -----
+
 # Kato: Push-Button End-to-End Testing of Kubernetes Operators
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![Regression Test](https://github.com/xlab-uiuc/kato/actions/workflows/unittest.yaml/badge.svg)](https://github.com/xlab-uiuc/kato/actions/workflows/unittest.yaml)
